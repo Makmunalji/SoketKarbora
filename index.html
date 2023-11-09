@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand-logo">
+      <a href="" class="stu"><img  src="img/soket.png"  width="150px" alt="soket"></a>
+      <a href="" class="dua"><img  src="img/karbora.png" width="150px" alt="karbora"></a>
+    </div>
+    <h1>LIVE SCORE</h1>
+  </nav>
+
+  <div class="container">
+    <div class="poin-1">
+      <input class="tim-1" type="text">
+      <input class="sekolah-1" type="text">
+      <input class="angka" type="number">
+    </div>
+
+    <div class="waktu">
+      <div class="stopwatch">
+        <div id="stopwatch">04:00</div>
+        <div class="bottom">
+          <button id="startButton">MULAI</button>
+          <button id="resetButton">RESET</button>
+        </div>
+      </div>
+      <div class="content">
+        <p>Time</p>
+      </div>
+    </div>
+
+    <div class="poin-2">
+      <input class="tim-2" type="text">
+      <input class="sekolah-2" type="text">
+      <input class="angka" type="number">
+    </div>
+  </div>
+
+
+
+
+    <script>
+        let timer;
+        let duration = 240; // 4 menit dalam detik (4 * 60)
+
+        function updateStopwatch() {
+            const minutes = Math.floor(duration / 60);
+            const seconds = duration % 60;
+
+            const minutesStr = String(minutes).padStart(2, '0');
+            const secondsStr = String(seconds).padStart(2, '0');
+
+            document.getElementById('stopwatch').textContent = `${minutesStr}:${secondsStr}`;
+        }
+
+        function startTimer() {
+            if (duration > 0) {
+                document.getElementById('startButton').textContent = "Berhenti";
+                document.getElementById('startButton').removeEventListener('click', startTimer);
+                document.getElementById('startButton').addEventListener('click', stopTimer);
+
+                timer = setInterval(function () {
+                    duration--;
+                    updateStopwatch();
+                    if (duration === 0) {
+                        clearInterval(timer);
+                        document.getElementById('startButton').textContent = "Selesai";
+                    }
+                }, 1000);
+            }
+        }
+
+        function stopTimer() {
+            clearInterval(timer);
+            document.getElementById('startButton').textContent = "Lanjutkan";
+            document.getElementById('startButton').removeEventListener('click', stopTimer);
+            document.getElementById('startButton').addEventListener('click', resumeTimer);
+        }
+
+        function resumeTimer() {
+            startTimer();
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            duration = 240;
+            updateStopwatch();
+            document.getElementById('startButton').textContent = "Mulai";
+            document.getElementById('startButton').removeEventListener('click', resumeTimer);
+            document.getElementById('startButton').addEventListener('click', startTimer);
+        }
+
+        document.getElementById('startButton').addEventListener('click', startTimer);
+        document.getElementById('resetButton').addEventListener('click', resetTimer);
+    </script>
+</body>
+</html>
