@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-image: url(../img/bg.jpg);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+nav h1{
+  color: white;
+  font-size: 80px;
+}
+.brand-logo{
+  margin-top: -116px;
+}
+.brand-logo .dua{
+  margin-right: 170px;
+}
+.container{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+.poin-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poin-1 .tim-1{
+  background-color: blue;
+  height: 50px;
+  width: 270px;
+  font-size: 40px;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 2px 2px 7px 3px rgba(253, 3, 3, 0.7),-2px -2px 7px 3px rgba(2, 81, 252, 0.7);
+  font-weight: bold;
+  color: white;
+}
+.poin-1 .sekolah-1{
+  background-color: blue;
+  height: 30px;
+  width: 250px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.poin-1 .angka{
+  height: 300px;
+  width: 400px;
+  font-size: 310px;
+  text-align: center;
+  background-color: rgba(253, 251, 251,0);
+  color: white;
+  font-weight: bold;
+  input[type="number"] {
+    border: none;
+}
+}
+.waktu{
+  background-color: white;
+  height: 270px;
+  width: 400px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.waktu .stopwatch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.waktu .content{
+  width: 90px;
+  height: 30px;
+  background-color: red;
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+}
+.waktu .content P{
+  font-size: 23px;
+}
+#stopwatch {
+  font-size: 160px;
+  font-weight: bold;
+}
+#startButton{
+  background-color: red;
+  border-radius: 7px;
+  padding: 3px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+#resetButton{
+  background-color: blue;
+  border-radius: 7px;
+  padding: 3px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.poin-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poin-2 .tim-2{
+  background-color: RED;
+  height: 50px;
+  width: 270px;
+  font-size: 40px;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 2px 2px 7px 3px rgba(253, 3, 3, 0.7),-2px -2px 7px 3px rgba(2, 81, 252, 0.7);
+  font-weight: bold;
+  color: white;
+}
+.poin-2 .sekolah-2{
+  background-color: red;
+  height: 30px;
+  width: 250px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.poin-2 .angka{
+  height: 300px;
+  width: 400px;
+  font-size: 310px;
+  text-align: center;
+  background-color: rgba(253, 251, 251,0);
+  color: white;
+  font-weight: bold;
+  input[type="number"] {
+    border: none;
+}
+}
