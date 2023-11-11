@@ -35,7 +35,7 @@ nav h1{
   background-color: blue;
   height: 50px;
   width: 270px;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -130,7 +130,7 @@ nav h1{
   background-color: RED;
   height: 50px;
   width: 270px;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
