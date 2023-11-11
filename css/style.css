@@ -15,9 +15,10 @@ nav h1{
   color: white;
   font-size: 100px;
   text-shadow: 2px 2px 9px rgb(252, 152, 2);
+  margin-top: -40px;
 }
 .brand-logo{
-  margin-top: -116px;
+  margin-top: -120px;
 }
 .brand-logo .dua{
   margin-right: 170px;
