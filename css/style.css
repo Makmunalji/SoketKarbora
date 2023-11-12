@@ -107,6 +107,10 @@ nav h1{
   font-size: 160px;
   font-weight: bold;
 }
+.Bottom{
+  display: flex;
+  justify-content: space-between;
+}
 #startButton{
   background-color: red;
   border-radius: 7px;
