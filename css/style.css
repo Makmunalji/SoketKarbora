@@ -167,3 +167,11 @@ nav h1{
     border: none;
 }
 }
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+  body{
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+}
